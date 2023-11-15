@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="calculator"> 
+        <div class="changeOver">
+            <div class="changeOver1" ><a href="./index.html">123</a></div>
+            <div class="changeOver1"><a href="./index2.html">Fx</a></div>
+        </div>
+        <!-- <input type="text" name="display" id="displayScreen"> -->
+        <div id="displayScreen"> </div>
+
+        <div class="btn-num">
+            <button onclick="clearScreen()" class="btnValueN" >AC</button>
+            <button onclick="btnNum('+/-')" class="btnValueN">+/-</button>
+            <button onclick="btnNum('%')" class="btnValueN">%</button>
+            <button onclick="btnNum('/')"class="btnValueNM">&#xF7;</button>
+            <button onclick="btnNum('*')"  class="btnValueNM">x</button>
+        </div>
+
+        <div class="btn-num">
+            <button onclick="btnNum(9)" class="btnValue">9</button>
+            <button onclick="btnNum(8)"  class="btnValue">8</button>
+            <button onclick="btnNum(7)"  class="btnValue">7</button>
+            <button onclick="btnNum(6)" class="btnValue">6</button>
+            <button onclick="btnNum(5)" class="btnValue">5</button>
+            
+        </div>
+        <div class="btn-num">
+            
+            <button onclick="btnNum(4)" id="numBer" class="btnValue">4</button>
+            <button onclick="btnNum(3)" id="numBer" class="btnValue">3</button>
+            <button onclick="btnNum(2)" id="numBer" class="btnValue">2</button>
+            <button onclick="btnNum(1)" id="numBer" class="btnValue">1</button>
+            <button onclick="btnNum(0)" id="numBer" class="btnValue">0</button>
+        </div>
+        <div class="btn-num">
+            <button onclick="btnNum('-')" class="btnValue">-</button>
+            <button onclick="btnNum('.')" class="btnValue">.</button>
+            <button id="cal" class="btnValueNM">pI</button>
+            <button onclick="btnNum('+')" class="btnValueNM">+</button>
+            <button onclick="btnNum('+')" class="btnValueNM">+</button>
+        </div>
+        <div class="btn-num">
+            <button onclick="btnNumLog()"  id = "logSign" class="btnValue">log</button>
+            <button onclick="btnNum('tan ')" id="tanSign" class="btnValue">tan</button>
+            <button onclick="btnNumSin()" id="sinSign" class="btnValue">sin</button>
+            <button onclick="btnNumCos()" id="cosSign" class="btnValue">cos</button>
+            <button onclick="btnSqrtRoot('x')" class="btnValue">r2</button>
+            
+        </div> 
+        <div class="btn-num">
+            <button onclick="btnNum('sqrt ')" class="btnValue">sqrt</button>
+            <button onclick="btnNum(4)" class="btnValue">4</button>
+            <button onclick="btnNum(3)" class="btnValue">3</button>
+            <!-- <button onclick="btnNum(2)" class="btnValue">2</button> -->
+            <!-- <button onclick="btnNum(1)" class="btnValue">1</button> -->
+            <button id="cal" onclick="calculateResult()" class="btnValueNMM">=</button>
+        </div>
+        <hr>
+    </nav>
+<script src="./main.js"></script>
+</body>
+</html>
